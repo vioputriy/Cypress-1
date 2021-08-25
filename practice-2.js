@@ -7,12 +7,12 @@ describe ('Test Suite untuk Study Case 2', function(){
 
     }),
 
-    it('TC-02 Pilih Jenis Kelamin pada radio button', function(){
+    it('TC-02 Pilih Gender', function(){
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/');
         cy.get('[value="female"]').check().should('be.checked', 'female');
     }),
 
-    it('TC-03 Pilih satu atau semua pada checkbox', function(){
+    it('TC-03', function(){
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/');
         cy.get('[value="Bike"]').check().should('exist');
     }),
@@ -22,7 +22,7 @@ describe ('Test Suite untuk Study Case 2', function(){
         cy.get('select').select('audi').should('have.value', 'audi');
     }),
 
-    it('TC-05 Klik tombol “Click Me” pada bagian simple controls lalu cek apakah terdapat tulisan button success.', function(){
+    it('TC-05', function(){
         cy.visit('https://ultimateqa.com/simple-html-elements-for-automation/');
         cy.get('.et_pb_cta_0 > .et_pb_button_wrapper > .et_pb_button').click();
         cy.get('.entry-title').should('have.text', 'Button success');
